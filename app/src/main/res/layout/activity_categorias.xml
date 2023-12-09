@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categorias">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+
+    <LinearLayout
+        android:id="@+id/buscar"
+        android:layout_width="353dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/plaintext_border"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtBusqueda"
+            android:layout_width="295dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="Buscar"
+            android:inputType="textPersonName"
+            android:textColor="@color/gris_light"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btnBuscar"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:onClick="irBusqueda"
+            android:scaleType="center"
+            app:srcCompat="@drawable/search" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat1"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:onClick="cardigan"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catCardigan"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cardigans" />
+
+        <TextView
+            android:id="@+id/txtCardigan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Cardigan"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat2"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:onClick="hoodies"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catHoddie"
+            android:layout_width="115dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/hoddies" />
+
+        <TextView
+            android:id="@+id/txtHoddie"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Hoodie"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat3"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/cat1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:onClick="tops"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catTops"
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/tops" />
+
+        <TextView
+            android:id="@+id/txtTops"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Tops"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat4"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/cat2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:onClick="vestidos"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catVestidos"
+            android:layout_width="122dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vestidos" />
+
+        <TextView
+            android:id="@+id/txtVestidos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Vestidos"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat5"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/cat3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:onClick="shorts"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catShorts"
+            android:layout_width="127dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/shorts" />
+
+        <TextView
+            android:id="@+id/txtShorts"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Shorts"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cat6"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/cat4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:onClick="faldas"
+        app:cardBackgroundColor="#F4F4F4">
+
+        <ImageView
+            android:id="@+id/catFaldas"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/faldas" />
+
+        <TextView
+            android:id="@+id/txtFaldas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:focusable="auto"
+            android:gravity="center"
+            android:text="Faldas"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBusqueda"
+        android:layout_width="411dp"
+        android:layout_height="575dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/buscar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="3dp" />
+
+</RelativeLayout>

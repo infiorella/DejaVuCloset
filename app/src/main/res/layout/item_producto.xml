@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/producto"
+        android:layout_width="165dp"
+        android:layout_height="245dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="irDetalles1"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTituloItem"
+                android:layout_width="145dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:focusable="auto"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="S/. "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrecioItem"
+                    android:layout_width="118dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="right"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgProductoItem"
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:scaleType="centerCrop"
+            android:scaleY="1" />
+
+        <ImageButton
+            android:id="@+id/corazonItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:backgroundTint="@null"
+            app:srcCompat="@drawable/corazon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

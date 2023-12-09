@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">DejaVuCloset</string>
+    <string name="nombre">DejaVu Closet</string>
+    <string name="frase">Ropa de calidad a un menor precio</string>
+    <string name="iniciarsesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+
+    <!---Pantalla de Incio de Sesión-->
+    <string name="email">E-mail</string>
+    <string name="contraseña">Contraseña</string>
+
+
+    <!---Pantalla de registro-->
+    <string name="nombres">Nombre Completo</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="fechanac">Fecha de Nacimiento</string>
+    <string name="celular">Celular</string>
+    <string name="direccion">Dirección</string>
+    <string name="distrito">Distrito</string>
+
+    <!--Titulos-->
+    <string name="productos">Productos</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="carrito">Carrito</string>
+    <string name="detalles">Detalles</string>
+    <string name="perfil">Perfil</string>
+
+    <!--Detalles de Pedido-->
+    <string name="entrega">Entrega</string>
+    <string name="repartidor">Repartidor</string>
+
+    <!--Perfil-->
+    <string name="editar">Editar Perfil</string>
+    <string name="nosotros">Nosotros</string>
+    <string name="deseos">Lista de Deseos</string>
+
+
+    <string name="bienvenida">Explora tu lado fashionista, selecciona los productos que te gustan y realiza tu pedido desde la comodidad de tu casa con nuestra aplicación</string>
+    <string name="descripcion">DejaVu Closet es un pequeño emprendimiento formado por Miah Yaranga en el año 2019 donde se ofrece ropa enfocada a la moda femenina actual.
+        Debido al aumento de demanda de nuestros productos, decidimos crear un aplicativo móvil para hacer más accesible los pedidos a nuestras clientas.</string>
+    <string name="desProducto">Recordar que según nuestras políticas de cambio, por la pandemia, no estamos haciendo cambios por tallas</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="formulario">Si tienes alguna queja, sugerencia o consulta, no dudes en rellenar el formulario y te responderemos a la mayor brevedad posible. Tu opinión nos importa, ayúdanos a mejorar :)</string>
+</resources>

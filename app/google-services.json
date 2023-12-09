@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1031995484004",
+    "project_id": "dejavucloset",
+    "storage_bucket": "dejavucloset.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031995484004:android:4af33f3c252c39a9137c71",
+        "android_client_info": {
+          "package_name": "com.example.DejaVuCloset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031995484004-d0bn33474o5ug78seubhev4fjovbrkoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMEjQHzXtFbS6R0QnXST3ZNz_XIlgvwyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031995484004-d0bn33474o5ug78seubhev4fjovbrkoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031995484004:android:b40130f272bfb067137c71",
+        "android_client_info": {
+          "package_name": "com.example.dejavucloset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031995484004-d0bn33474o5ug78seubhev4fjovbrkoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMEjQHzXtFbS6R0QnXST3ZNz_XIlgvwyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031995484004-d0bn33474o5ug78seubhev4fjovbrkoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

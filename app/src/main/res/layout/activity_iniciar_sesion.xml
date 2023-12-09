@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dejavucloset.iniciosesion.IniciarSesion">
+
+
+    <ImageView
+        android:id="@+id/imgAtras"
+        android:layout_width="94dp"
+        android:layout_height="90dp"
+        android:onClick="irAtras"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/iniciarsesion"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/plaintext_border"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.082">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            app:srcCompat="@drawable/icon" />
+
+        <EditText
+            android:id="@+id/etMail"
+            android:layout_width="269dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/gris_light"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/plaintext_border"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            app:srcCompat="@drawable/password" />
+
+        <EditText
+            android:id="@+id/etClave"
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/segoe_ui"
+            android:hint="@string/contraseña"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/gris_light"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btnVerIniciar"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:onClick="mostrarClave"
+            app:srcCompat="@drawable/ojo" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="sans-serif-light"
+        android:onClick="irPerfil"
+        android:text="@string/iniciarsesion"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="279dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/btnIniciarSesion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBienvenida"
+        app:layout_constraintVertical_bias="0.097">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginBottom="68dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="¿No tienes una cuenta?" />
+
+        <TextView
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="110dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="90dp"
+            android:clickable="true"
+            android:focusable="auto"
+            android:fontFamily="@font/poppins_bold"
+            android:onClick="irRegistro"
+            android:paddingLeft="10dp"
+            android:text="@string/registrarse" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bottom_menu" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="227dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="91dp"
+        app:srcCompat="@drawable/dejavu" />
+
+    <ProgressBar
+        android:id="@+id/pbIniciar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="354dp" />
+
+
+</RelativeLayout>

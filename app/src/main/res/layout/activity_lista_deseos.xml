@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaDeseos">
+
+    <LinearLayout
+        android:id="@+id/headerDeseo"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@drawable/sombra"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="94dp"
+            android:layout_height="match_parent"
+            android:onClick="irAtras"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/numPedido"
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="@string/deseos"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDeseos"
+        android:layout_width="match_parent"
+        android:layout_height="583dp"
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/headerDeseo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp" />
+
+</RelativeLayout>
